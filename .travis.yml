@@ -37,12 +37,10 @@ install:
 script:
 - "./.travis/run.sh"
 deploy:
-  provider: releases
-  api_key:
-    secure: QiadMGAmtPw+Ut7LWqa3U/tImPIgiPH79mM9o8DGBckcacp9HkDYvCGuOjs5hZbCBBuQ6IAkikotS8iCSwHey1GK9jSDbpgKvVGiACdp8HNhitY8V/S3e1UukDlMeu+Q7vCJtynSGX0BJuiOQB8ZQyQ2HEZ7kMQgTLCEO1Uljhc=
-  file: dist/*.whl
-  file_glob: true
+  provider: pypi
+  user: robermorales
+  password:
+    secure: LbjZQCcVX5ZdAtlfwm69Wwbl30n2PMWrlGI/DVivJzH0+bKtMc0V4hznrcFp+k/BD7S7UL0KH8mWO1vWGB0YLPqo6jyjfkCvVN7Qi4LOd2xRYZQB3zGfgUz5f9ZPy3IhGZkWR0Zw2s5npZyTo/j6TKJoXXOGE8jEZBgNx36/vTIkgcAeyhd5hB1Va6RcbVNrXozgWS4iPCYeCOW1zTZubzbvxlZQfWwP/qYbPILZFAAEO0F1FuonLXVxr/CbgxDmwD+nxlic16nbRHcNdVnOtAQKDXlNjxqeQpyukUQ+aOmlDNfHt60+gDUPin8XibrL+ytf31DcbZl3GS9hVQDKqr6ONm8+w7cqHTzG9MZkYJ3HwrkzFmJ1CzSZfOQDcRazVWK6X6j/wPuFWgjjPvxonmtYmASeOfR8RTiWzjTXDmRSHkISlxlpCdtcfynwF8mjrlR9p74jCR57d33gtDHdEx1uPmXRbnrhT/EplJ5ujoqJKOHQFaCD5SJMqp4wo8CmjsdVPB4GvhCJaNMXgLFOMtUjaGrj9tiFDtGxNINL9BuAs5H7clRjOTTh0eCPBYPeURsb3ocRJfi6RrtLOoZJ2eOxc1C+ViiEoO2L3cTtua0UCFotwXzhpouJrE5hDJIuaJ181F09O7QdpGlk6u3mLytiuvpO31AxybhwlyZ+yWM=
   on:
-    repo: simplejson/simplejson
-    tags: true
-  skip_cleanup: true
+    distributions: bdist_wheel
+    repo: rstorcloud/validjson

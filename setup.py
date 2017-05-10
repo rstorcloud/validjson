@@ -11,7 +11,7 @@ from distutils.errors import CCompilerError, DistutilsExecError, \
     DistutilsPlatformError
 
 IS_PYPY = hasattr(sys, 'pypy_translation_info')
-VERSION = '3.10.0'
+VERSION = '3.11.0'
 DESCRIPTION = "Simple, fast, extensible JSON encoder/decoder for Python"
 
 with open('README.rst', 'r') as f:
@@ -96,14 +96,14 @@ def run_setup(with_binary):
         kw = dict(cmdclass=cmdclass)
 
     setup(
-        name="simplejson",
+        name="validjson",
         version=VERSION,
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         classifiers=CLASSIFIERS,
         author="Bob Ippolito",
         author_email="bob@redivi.com",
-        url="http://github.com/simplejson/simplejson",
+        url="http://github.com/rstorcloud/validjson",
         license="MIT License",
         packages=['simplejson', 'simplejson.tests'],
         platforms=['any'],

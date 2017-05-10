@@ -1,3 +1,8 @@
+Version 3.11.0 released 2017-05-07
+
+* First release of fork validjson
+* Add big_floats_as_string option to output "Infinity" instead of invalid Infinity
+
 Version 3.10.0 released 2016-10-28
 
 * Add RawJSON class to allow a faster path for already encoded JSON.
