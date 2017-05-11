@@ -1,3 +1,7 @@
+Version 3.12.1 released 2017-05-11
+
+* Avoid incomplete C implementation if big_floats_as_string is True
+
 Version 3.12.0 released 2017-05-07
 
 * Released from travis
